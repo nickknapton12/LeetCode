@@ -1,6 +1,13 @@
 // Page 94
 // Big O(n + m) where n is length of first list and m is length of second list
 // Space O(n)
+// Can make this O(1) space depending on how you define intersection, This way
+// Assumes intersection just means atleast one node is similar and the paths
+// cross (kinda like a road intersection). To get O(1) you must assume that
+// the intersection means the two lists come together and after the shared node
+// the share the rest of the nodes aswell (kinda like a merge on the highway).
+// You can then compare the last nodes and if they are the same traverse through
+// both lists to find where they intersect.
 
 class ListNode {
     constructor(val, next = null){
