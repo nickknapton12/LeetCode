@@ -1,6 +1,6 @@
 // Queue definition
 
-class Queue {
+export class Queue {
     constructor() {
         var first = null;
         var last = null;

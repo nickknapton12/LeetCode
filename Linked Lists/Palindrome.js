@@ -2,14 +2,14 @@
 // Big O(n)
 // Space O(n)
 
-class ListNode {
+export class ListNode {
     constructor(val, next = null){
         this.val = val
         this.next = next;
     }
 }
 
-class LinkedList {
+export class LinkedList {
     constructor(head = null) {
         this.head = head;
     }
